@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.my-btn{
+  border-radius: 0.375rem; 
+  background-color: #0A090D; 
+  border-bottom-width: 2px; 
+  border-color: #525255;
+  box-shadow: 0px 2px 4px 1px #909092; 
+  transition: border-width 0.3s ease, box-shadow 0.3s ease;
+  border-style: solid;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.my-btn:hover {
+border-top-width: 1px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+   border-bottom-width: 0px; 
+
+  box-shadow: none; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.last-btn{
+  border-radius: 0.375rem; 
+  background-color: #0A090D; 
+  border-bottom-width: 2px; 
+  border-color: #525255;
+ box-shadow: 0px 7px 10px 1.3px #909092;
+  transition: border-width 0.3s ease, box-shadow 0.3s ease;
+  border-style: solid;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width:3px ;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.last-btn:hover {
+border-top-width: 1px;
+  border-left-width: 2px;
+  border-right-width: 0px;
+   border-bottom-width: 2px; 
+
+  box-shadow: none; 
 }
