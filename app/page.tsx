@@ -8,21 +8,15 @@ import L6 from "./layers/l6";
 
 export default function Home() {
   return (
-   <div className="w-full h-[100vh] flex justify-center items-center bg-[#0E1013]">
-    <div className="  flex flex-col gap-2 h-auto w-auto p-4 rounded-xl bg-[#26262A]">
-  
-        <L1></L1>
-        <L2/>
-        <L3></L3>
-        <L4></L4>
-        <L5/>
-        <L6/>
-       
-    
-      
-
-    </div>
-
-   </div>
+  <div className="min-h-screen w-screen h-screen p-8 sm:p-0 overflow-hidden flex justify-center items-center bg-[#0E1013]">
+            <div className="transform rotate-90 py-5 sm:rotate-0 origin-center flex flex-col gap-2 h-auto w-auto sm:p-4 rounded-xl bg-[#26262A]">
+                <L1 />
+                <L2 />
+                <L3 />
+                <L4 />
+                <L5 />
+                <L6 />
+            </div>
+        </div>
   );
 }
